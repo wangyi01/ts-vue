@@ -1,0 +1,7 @@
+:root {
+  --bgColor: yellow
+}
+
+.bg {
+  background: var(--bgColor)
+}

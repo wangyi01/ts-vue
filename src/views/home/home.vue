@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-11-12 15:47:46
- * @LastEditTime: 2019-11-20 15:04:52
+ * @LastEditTime: 2019-11-20 15:38:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /project/src/views/home/home.vue
@@ -65,7 +65,7 @@
 
 <style lang="less" scoped></style>
 <style>
-  @import "../../assets/css/atom/bg/bg.css";
-  @import "../../assets/css/atom/color/color.css";
-  @import "../../assets/css/atom/font/font.css";
+  @import "../../assets/styles/atom/bg/bg.css";
+  @import "../../assets/styles/atom/color/color.css";
+  @import "../../assets/styles/atom/font/font.css";
 </style>

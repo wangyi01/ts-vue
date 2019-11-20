@@ -1,0 +1,41 @@
+@import '../main.css';
+
+.f-s-28 {
+  font-size: var(--FONTSIZE28);
+}
+
+.f-s-18 {
+  font-size: var(--FONTSIZE18);
+}
+
+.f-s-16 {
+  font-size: var(--FONTSIZE16);
+}
+
+.f-s-14 {
+  font-size: var(--FONTSIZE14);
+}
+
+.f-s-12 {
+  font-size: var(--FONTSIZE12);
+}
+
+.f-w-500 {
+  font-weight: var(--FONTWEIGHT500);
+}
+
+.f-w-600 {
+  font-weight: var(--FONTWEIGHT600);
+}
+
+.f-w-700 {
+  font-weight: var(--FONTWEIGHT700);
+}
+
+.f-w-800 {
+  font-weight: var(--FONTWEIGHT800);
+}
+
+.f-w-900 {
+  font-weight: var(--FONTWEIGHT900);
+}

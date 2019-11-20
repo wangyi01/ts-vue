@@ -1,23 +1,20 @@
 <!--
  * @Author: your name
  * @Date: 2019-11-12 15:47:46
- * @LastEditTime: 2019-11-19 21:44:45
+ * @LastEditTime: 2019-11-20 11:44:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /project/src/views/home/home.vue
  -->
 <template>
-  <div>
-    <p>{{ title }}</p>
-    <p>用户信息{{ getUserInfor }}</p>
-    <!-- <button @click="click">点击我</button> -->
-    <ul>
-      <li v-for="(item, index) in list" :key="index">{{ item.name }}</li>
-    </ul>
+  <div class="bg-51afff">
+    <p class="f-s-28">{{ title }}</p>
+    <p class="f-w-900 color-ebae1c">用户信息{{ getUserInfor }}</p>
     <Pagination
       :pageSize="pageSize"
       :pageNum="pageNum"
       :totalCount="totalCount"
+      @pageBar="getListsRequest"
     ></Pagination>
   </div>
 </template>
@@ -26,7 +23,6 @@
   import { Getter, Action, Mutation } from "vuex-class";
   import { Component, Vue } from "vue-property-decorator";
   import Pagination from "@/components/pagination/pagination.vue";
-  import { Lists, C, advertisersListsResponse, A } from "@/interface/home/home";
   interface UserInfor {
     name: string;
     age: number;
@@ -41,22 +37,13 @@
     @Getter getUserInfor!: UserInfor;
     @Mutation changeUserInfor!: Function;
     @Action aleartUserInfor!: Function;
-    private title = "这里是首页!";
-    private pageSize = 20;
-    private pageNum = 1;
-    private totalCount = 1000;
-    private list: Lists[] = [
-      { name: "小王", age: 13 },
-      { name: "小王", age: 13 },
-      { name: "小王", age: 13 },
-      { name: "小王", age: 13 },
-      { name: "小王", age: 13 },
-    ];
-    // private click(): void {
-    //   console.info("点击了我");
-    //   this.$router.push({ name: "about" });
-    //   console.info(this.getUserInfor);
-    // }
+    private title: string = "这里是首页!";
+    private pageSize: number = 20;
+    private pageNum: number = 1;
+    private totalCount: number = 1000;
+    private async getListsRequest() {
+      console.info("请求函数");
+    }
     created(): void {
       console.info("获取用户信息");
       console.info(this.getUserInfor);
@@ -66,12 +53,15 @@
       //异步变更
       // this.aleartUserInfor(value);
     }
+    mounted(): void {
+      this.getListsRequest();
+    }
   }
 </script>
 
 <style lang="less" scoped>
-  @import "../../assets/css/global.less";
-</style>
-<style>
-  /* @import "../../assets/css/cssnext.css"; */
+  // @import "../../assets/css/global.less";
+  @import "../../assets/css/atom/bg/bg.css";
+  @import "../../assets/css/atom/color/color.css";
+  @import "../../assets/css/atom/font/font.css";
 </style>

@@ -1,13 +1,13 @@
 <!--
  * @Author: wangyi
  * @Date: 2019-11-19 11:00:51
- * @LastEditTime: 2019-11-19 11:28:33
+ * @LastEditTime: 2019-11-20 11:46:20
  * @LastEditors: Please set LastEditors
  * @Description: pagination
  * @FilePath: /project/src/components/pagination/pagination.vue
  -->
 <template>
-  <div>
+  <div class="bg-ebae1c">
     <el-pagination
       @current-change="handleCurrentChange"
       :current-page="pageNum"
@@ -20,16 +20,19 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue, Prop } from "vue-property-decorator";
+  import { Component, Vue, Prop, Emit } from "vue-property-decorator";
   @Component({})
   export default class Pagination extends Vue {
     @Prop() private pageSize!: number;
     @Prop() private pageNum!: number;
     @Prop() private totalCount!: number;
+    @Emit("pageBar")
     private handleCurrentChange(currentPage: number): void {
       console.info(`当前第${currentPage}页`);
     }
   }
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+  @import "../../assets/css/atom/bg/bg.css";
+</style>

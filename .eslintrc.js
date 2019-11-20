@@ -1,7 +1,7 @@
 /*
  * @Author: wangyi
  * @Date: 2019-11-15 14:51:33
- * @LastEditTime: 2019-11-19 17:09:52
+ * @LastEditTime: 2019-11-20 09:43:41
  * @LastEditors: Please set LastEditors
  * @Description: eslint
  * @FilePath: /project/.eslintrc.js
@@ -22,13 +22,15 @@ module.exports = {
   },
   parserOptions: {
     parser: "@typescript-eslint/parser",
-    // project: "./tsconfig.json",
+    project: "./tsconfig.json",
     // tsconfigRootDir: ".",
-    // extraFileExtensions: [".vue"],
+    extraFileExtensions: [".vue"],
     // ecmaVersion: 6
   },
   rules: {
-    // "no-unused-vars": "off",
-    // "@typescript-eslint/no-unused-vars": "error",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
   },
 };

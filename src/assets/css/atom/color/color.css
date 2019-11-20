@@ -1,0 +1,41 @@
+@import '../main.css';
+
+.color-51afff {
+  background: var(--COLOR51AFFF);
+}
+
+.color-eaf5ff {
+  color: var(--COLOREAF5FF);
+}
+
+.color-2cc077 {
+  color: var(--COLOR2CC077);
+}
+
+.color-e45b5a {
+  color: var(--COLORE45B5A);
+}
+
+.color-ebae1c {
+  color: var(--COLOREBAE1C);
+}
+
+.color-dcdfe6 {
+  color: var(--COLORDCDFE6);
+}
+
+.color-333 {
+  color: var(--COLOR333);
+}
+
+.color-666 {
+  color: var(--COLOR666);
+}
+
+.color-999 {
+  color: var(--COLOR999);
+}
+
+.color-f8f8 {
+  color: var(--COLORF8F8);
+}

@@ -1,0 +1,41 @@
+@import '../main.css';
+
+.bg-51afff {
+  background: var(--BG51AFFF);
+}
+
+.bg-eaf5ff {
+  background: var(--BGEAF5FF);
+}
+
+.bg-2cc077 {
+  background: var(--BG2CC077);
+}
+
+.bg-e45b5a {
+  background: var(--BGE45B5A);
+}
+
+.bg-ebae1c {
+  background: var(--BGEBAE1C);
+}
+
+.bg-dcdfe6 {
+  background: var(--BGDCDFE6);
+}
+
+.bg-333 {
+  background: var(--BG333);
+}
+
+.bg-666 {
+  background: var(--BG666);
+}
+
+.bg-999 {
+  background: var(--BG999);
+}
+
+.bg-f8f8 {
+  background: var(--BGF8F8);
+}

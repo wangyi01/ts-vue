@@ -1,0 +1,36 @@
+/* @import '../main.css'; */
+:root {
+  --HEIGHT30: 30px;
+  --HEIGHT40: 40px;
+  --HEIGHT44: 44px;
+  --WIDTH66: 66px;
+  --WIDTH88: 88px;
+  --WIDTH90: 90px;
+  --WIDTH120: 120px;
+  --WIDTH348: 348px;
+}
+
+.w120-h40 {
+  width: var(--WIDTH120);
+  height: var(--HEIGHT40);
+}
+
+.w348-h44 {
+  width: var(--WIDTH348);
+  height: var(--HEIGHT44);
+}
+
+.w88-h40 {
+  width: var(--WIDTH88);
+  height: var(--HEIGHT40);
+}
+
+.w90-h30 {
+  width: var(--WIDTH90);
+  height: var(--HEIGHT30);
+}
+
+.w66-h30 {
+  width: var(--WIDTH66);
+  height: var(--HEIGHT30);
+}

@@ -1,4 +1,18 @@
-@import '../main.css';
+/* @import '../main.css'; */
+:root {
+  /* 字体大小 */
+  --FONTSIZE28: 28px;
+  --FONTSIZE18: 18px;
+  --FONTSIZE16: 16px;
+  --FONTSIZE14: 14px;
+  --FONTSIZE12: 12px;
+  /* 字体粗细 */
+  --FONTWEIGHT500: 500;
+  --FONTWEIGHT600: 600;
+  --FONTWEIGHT700: 700;
+  --FONTWEIGHT800: 800;
+  --FONTWEIGHT900: 900;
+}
 
 .f-s-28 {
   font-size: var(--FONTSIZE28);

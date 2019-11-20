@@ -1,4 +1,17 @@
-@import '../main.css';
+/* @import '../main.css'; */
+:root {
+  --BG51AFFF: #51afff;
+  --BGEAF5FF: #eaf5ff;
+  --BG2CC077: #2cc077;
+  --BGE45B5A: #e45b5a;
+  --BGEBAE1C: #ebae1c;
+  --BGDCDFE6: #dcdfe6;
+  --BG333: #333;
+  --BG666: #666;
+  --BG999: #999;
+  --BGF8F8: #f8f8f8;
+  --BGFFF: #fff;
+}
 
 .bg-51afff {
   background: var(--BG51AFFF);
@@ -38,4 +51,8 @@
 
 .bg-f8f8 {
   background: var(--BGF8F8);
+}
+
+.bg-fff {
+  background: var(--BGFFF);
 }

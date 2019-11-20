@@ -1,7 +1,7 @@
 <!--
  * @Author: wangyi
  * @Date: 2019-11-19 11:00:51
- * @LastEditTime: 2019-11-20 11:46:20
+ * @LastEditTime: 2019-11-20 15:02:37
  * @LastEditors: Please set LastEditors
  * @Description: pagination
  * @FilePath: /project/src/components/pagination/pagination.vue
@@ -33,6 +33,7 @@
   }
 </script>
 
-<style lang="less" scoped>
+<style lang="less" scoped></style>
+<style>
   @import "../../assets/css/atom/bg/bg.css";
 </style>

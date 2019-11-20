@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-11-12 15:47:46
- * @LastEditTime: 2019-11-20 11:44:43
+ * @LastEditTime: 2019-11-20 15:04:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /project/src/views/home/home.vue
@@ -10,6 +10,7 @@
   <div class="bg-51afff">
     <p class="f-s-28">{{ title }}</p>
     <p class="f-w-900 color-ebae1c">用户信息{{ getUserInfor }}</p>
+    <el-button @click="jumpAbout">点击我</el-button>
     <Pagination
       :pageSize="pageSize"
       :pageNum="pageNum"
@@ -41,6 +42,9 @@
     private pageSize: number = 20;
     private pageNum: number = 1;
     private totalCount: number = 1000;
+    private jumpAbout(): void {
+      this.$router.push({ name: "about" });
+    }
     private async getListsRequest() {
       console.info("请求函数");
     }
@@ -59,8 +63,8 @@
   }
 </script>
 
-<style lang="less" scoped>
-  // @import "../../assets/css/global.less";
+<style lang="less" scoped></style>
+<style>
   @import "../../assets/css/atom/bg/bg.css";
   @import "../../assets/css/atom/color/color.css";
   @import "../../assets/css/atom/font/font.css";

@@ -1,4 +1,5 @@
 :root {
+  --COLOR36A3FF: #36A3FF;
   --COLOR51AFFF: #51afff;
   --COLOREAF5FF: #eaf5ff;
   --COLOR2CC077: #2cc077;
@@ -10,6 +11,10 @@
   --COLOR999: #999;
   --COLORF8F8: #f8f8f8;
   --COLORFFF: #fff;
+}
+
+.c-36a3ff {
+  color: var(--COLOR36A3FF);
 }
 
 .c-51afff {

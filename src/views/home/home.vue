@@ -1,16 +1,16 @@
 <!--
  * @Author: your name
  * @Date: 2019-11-12 15:47:46
- * @LastEditTime: 2019-11-20 15:38:39
+ * @LastEditTime: 2019-11-20 15:51:50
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /project/src/views/home/home.vue
  -->
 <template>
-  <div class="bg-51afff">
+  <div>
     <p class="f-s-28">{{ title }}</p>
     <p class="f-w-900 color-ebae1c">用户信息{{ getUserInfor }}</p>
-    <el-button @click="jumpAbout">点击我</el-button>
+    <div class="c-fff bg-51afff" @click="jumpAbout">点击我</div>
     <Pagination
       :pageSize="pageSize"
       :pageNum="pageNum"

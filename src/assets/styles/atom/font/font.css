@@ -1,6 +1,7 @@
 :root {
   /* 字体大小 */
   --FONTSIZE28: 28px;
+  --FONTSIZE24: 24px;
   --FONTSIZE18: 18px;
   --FONTSIZE16: 16px;
   --FONTSIZE14: 14px;
@@ -15,6 +16,10 @@
 
 .f-s-28 {
   font-size: var(--FONTSIZE28);
+}
+
+.f-s-24 {
+  font-size: var(--FONTSIZE24);
 }
 
 .f-s-18 {

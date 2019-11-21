@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-11-12 14:45:57
- * @LastEditTime: 2019-11-19 17:22:22
+ * @LastEditTime: 2019-11-21 14:23:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /project/webpack/webpack.config.js
@@ -14,7 +14,7 @@ const chalk = require("chalk");
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
 const smp = new SpeedMeasurePlugin();
 console.info(chalk.red(process.env.NODE_ENV));
-module.exports = env => {
+module.exports = () => {
   if (process.env.NODE_ENV === "dev") {
     return merge(baseConfig, devConfig);
   } else {

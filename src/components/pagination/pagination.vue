@@ -1,7 +1,7 @@
 <!--
  * @Author: wangyi
  * @Date: 2019-11-19 11:00:51
- * @LastEditTime: 2019-11-20 15:38:47
+ * @LastEditTime: 2019-11-21 14:42:51
  * @LastEditors: Please set LastEditors
  * @Description: pagination
  * @FilePath: /project/src/components/pagination/pagination.vue
@@ -26,6 +26,7 @@
     @Prop() private pageSize!: number;
     @Prop() private pageNum!: number;
     @Prop() private totalCount!: number;
+    // 方法名
     @Emit("pageBar")
     private handleCurrentChange(currentPage: number): void {
       console.info(`当前第${currentPage}页`);
@@ -34,6 +35,4 @@
 </script>
 
 <style lang="less" scoped></style>
-<style>
-  @import "../../assets/styles/atom/bg/bg.css";
-</style>
+<style></style>

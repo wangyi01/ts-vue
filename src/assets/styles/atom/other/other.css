@@ -1,0 +1,76 @@
+:root {
+  --CURSOR: pointer;
+  --TEXTCENTER: center;
+  --TEXTLEFT: left;
+  --TEXTRIGHT: right;
+  --FLOATLEFT: left;
+  --FLOATRIGHT: right;
+  --FLEX: flex;
+  --ALIGNITEMS: center;
+  --SPACEBETWEEN: space-between;
+  --SPACECENTER: center;
+  --SPACEAROUND: space-around;
+  --WRAP: wrap;
+  --HIDDEN: hidden;
+}
+
+.cursor {
+  cursor: var(--CURSOR);
+}
+
+.flex {
+  display: var(--FLEX);
+}
+
+.flex-items-center {
+  align-items: var(--ALIGNITEMS);
+}
+
+.flex-space-between {
+  justify-content: var(--SPACEBETWEEN);
+}
+
+.flex-space-center {
+  justify-content: var(--SPACECENTER);
+}
+
+.flex-space-around {
+  justify-content: var(--SPACEAROUND);
+}
+
+.flex-wrap {
+  flex-wrap: var(--WRAP);
+}
+
+.t-c {
+  text-align: var(--TEXTCENTER);
+}
+
+.t-l {
+  text-align: var(--TEXTLEFT);
+}
+
+.t-r {
+  text-align: var(--TEXTRIGHT);
+}
+
+.f-l {
+  float: var(--FLOATLEFT);
+}
+
+.f-r {
+  float: var(--FLOATRIGHT);
+}
+
+.hidden {
+  overflow: var(--HIDDEN);
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}

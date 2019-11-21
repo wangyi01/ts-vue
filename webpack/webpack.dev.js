@@ -1,12 +1,11 @@
 /*
  * @Author: your name
  * @Date: 2019-11-12 14:51:05
- * @LastEditTime: 2019-11-19 21:31:08
+ * @LastEditTime: 2019-11-21 14:21:09
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /project/webpack/webpack.dev.js
  */
-const path = require("path");
 const webpack = require("webpack");
 module.exports = {
   devtool: "inline-source-map",

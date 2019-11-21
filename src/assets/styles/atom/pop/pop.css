@@ -1,0 +1,38 @@
+:root {
+  --WINDOWBG: rgba(0, 0, 0, 0.3);
+  --CONTENTBG: #fff;
+  --MINWIDTH: 360px;
+  --MAXWIDTH: 1000px;
+  --CONTENTTOP: 100px;
+  --CONTENTRADIUS: 6px;
+  --PT: 30px;
+  --PB: 30px;
+  --PR: 40px;
+  --PL: 40px;
+}
+
+.pop-window {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--WINDOWBG);
+}
+
+.pop-content {
+  position: absolute;
+  z-index: 400 !important;
+  background: var(--CONTENTBG);
+  min-width: var(--MINWIDTH);
+  max-width: var(--MAXWIDTH);
+  margin-top: var(--CONTENTTOP);
+  border-radius: var(--CONTENTRADIUS);
+  min-width: var(--MINWIDTH);
+  padding: var(--PT) var(--PR) var(--PB) var(--PL);
+  overflow: hidden;
+}

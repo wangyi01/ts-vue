@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev  webpack-dev-server  --progress --config webpack/webpack.config.js",
-    "prod": "npm run lint &&  cross-env NODE_ENV=test webpack --env.NODE_ENV=prod --mode=production  --progress --config webpack/webpack.config.js",
+    "dev": "cross-env NODE_ENV=dev  webpack-dev-server --progress --config webpack/webpack.config.js",
+    "build:test": "npm run lint &&  cross-env NODE_ENV=test webpack --mode=production  --progress --config webpack/webpack.config.js",
+    "build:prod": "npm run lint &&  cross-env NODE_ENV=prod webpack --mode=production  --progress --config webpack/webpack.config.js",
     "lint": "eslint src  --ext .vue",
     "format": "prettier --write \"src/**/*.ts\""
   },

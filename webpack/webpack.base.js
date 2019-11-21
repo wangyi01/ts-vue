@@ -1,14 +1,26 @@
 /*
  * @Author: your name
  * @Date: 2019-11-12 14:49:50
- * @LastEditTime: 2019-11-19 17:51:31
+ * @LastEditTime: 2019-11-21 14:14:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /project/webpack/webpack.base.js
  */
 const path = require("path");
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
+const env = {
+  dev: () => {
+    return require("./config/dev.env");
+  },
+  test: () => {
+    return require("./config/test.env");
+  },
+  prod: () => {
+    return require("./config/prod.env");
+  },
+};
 module.exports = {
   //启动文件
   entry: { main: "./src/main.ts" },
@@ -67,5 +79,8 @@ module.exports = {
       template: "./public/index.html",
     }),
     new VueLoaderPlugin(),
+    new webpack.DefinePlugin({
+      "process.env": env[process.env.NODE_ENV](),
+    }),
   ],
 };

@@ -1,16 +1,13 @@
 <!--
  * @Author: your name
  * @Date: 2019-11-12 22:07:58
- * @LastEditTime: 2019-11-20 15:38:28
+ * @LastEditTime: 2019-11-21 15:12:35
  * @LastEditors: Please set LastEditors
  * @Description: about
  * @FilePath: /project/src/views/about/about.vue
  -->
 <template>
-  <div class="bg-e45b5a">
-    <p class="b-51afff b-r-20">{{ title }}</p>
-    <el-button>点击我</el-button>
-  </div>
+  <div></div>
 </template>
 
 <script lang="ts">
@@ -18,13 +15,8 @@
   @Component({
     components: {},
   })
-  export default class About extends Vue {
-    private title = "关于我";
-  }
+  export default class About extends Vue {}
 </script>
 
 <style lang="less" scoped></style>
-<style>
-  @import "../../assets/styles/atom/bg/bg.css";
-  @import "../../assets/styles/atom/border/border.css";
-</style>
+<style></style>

@@ -6,7 +6,7 @@
     "dev": "cross-env NODE_ENV=dev  webpack-dev-server --progress --config webpack/webpack.config.js",
     "build:test": "npm run lint &&  cross-env NODE_ENV=test webpack --mode=production  --progress --config webpack/webpack.config.js",
     "build:prod": "npm run lint &&  cross-env NODE_ENV=prod webpack --mode=production  --progress --config webpack/webpack.config.js",
-    "lint": "eslint src  --ext .vue",
+    "lint": "eslint src  --ext .vue --ext .ts",
     "format": "prettier --write \"src/**/*.ts\""
   },
   "keywords": [],

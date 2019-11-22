@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-11-12 15:47:46
- * @LastEditTime: 2019-11-21 15:10:12
+ * @LastEditTime: 2019-11-22 11:04:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /project/src/views/home/home.vue
@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-  import { Getter, Action, Mutation } from "vuex-class";
+  // import { Getter, Action, Mutation } from "vuex-class";
   import { Component, Vue } from "vue-property-decorator";
   @Component({
     components: {},

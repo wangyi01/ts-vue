@@ -1,13 +1,13 @@
 /*
  * @Author: wangyi
  * @Date: 2019-08-07 11:41:26
- * @LastEditTime: 2019-11-21 14:45:08
+ * @LastEditTime: 2019-11-22 11:02:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /ts-vue/src/util/interceptor.ts
  */
 import axios, { AxiosRequestConfig } from "axios";
-import { MessageBounced, Type } from "@/util/messageBox";
+// import { MessageBounced, Type } from "@/util/messageBox";
 const service = axios.create({
   baseURL: process.env.BASE_URL,
 });
